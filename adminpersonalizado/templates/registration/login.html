@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" autocomplete="off">
+    {%csrf_token%}
+    <center>
+    <label for="username"/>
+    <input type="email" id="username" name="username" placeholder="informe seu email" required autofocus>
+     <p/>
+    <label for="password"/>
+    <input type="password" id="password" name="password" placeholder="informe a senha" required>
+    <p/>
+    <button type="submit" >acessa</button>
+    <p>&copy; {%now 'Y' %}</p>
+        </center>
+
+</form>
+{% endblock %}

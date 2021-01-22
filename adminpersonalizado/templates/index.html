@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<div>
+    <center>
+    <h1>Login</h1>
+    {% if user.is_anonymous %}
+    <a  href="{% url 'login' %}">logar</a>
+    {% else %}
+    <div>
+        Seja Bem Vindo (a) {{user.get_full_name}}
+    </div>
+     <a  href="{% url 'logout' %}">sair</a>
+    {% endif %}
+</center>
+</div>
+
+{% endblock %}
