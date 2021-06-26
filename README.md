@@ -17,6 +17,5 @@ criar super usuario:
   
   `http://localhost:8000/`   
     (pagina criada, utilizando recusos)
-  
-
-
+    
+ ![GitHub](https://img.shields.io/badge/Django-3.2.4-blue) ![GitHub](https://img.shields.io/badge/licence-MIT-GREE) 
